@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!-- ======= Sidebar ======= -->
+<aside th:fragment="pageSidebar" id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+            <a class="nav-link " href="/admin/dashboard">
+                <i class="bi bi-grid"></i>
+                <span>Dashboard</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
+
+        <li class="nav-heading">Pages</li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="/static#">
+                <i class="bi bi-box"></i>
+                <span>상품 관리</span>
+            </a>
+        </li><!-- End Product Management Page Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="/static#">
+                <i class="bi bi-receipt"></i>
+                <span>주문 관리</span>
+            </a>
+        </li><!-- End Order Management Page Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="/customers">
+                <i class="bi bi-person"></i>
+                <span>고객 관리</span>
+            </a>
+        </li><!-- End Customer Management Page Nav -->
+
+    </ul>
+
+</aside><!-- End Sidebar-->
+
+</html>

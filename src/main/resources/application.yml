@@ -1,1 +1,22 @@
+server:
+  port: 8080
 
+spring:
+  devtools:
+    livereload:
+      enabled: true
+  thymeleaf:
+    cache: false
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/orderme
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
